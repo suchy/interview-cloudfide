@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "node --env-file=.env --experimental-strip-types --watch app/index.ts"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "dependencies": {
+    "@binance/spot": "^22.0.0",
+    "@types/express": "^5.0.5",
+    "express": "^5.1.0",
+    "mongodb": "^6.20.0"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "arrowParens": "always"
+  }
+}
