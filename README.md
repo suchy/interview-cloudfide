@@ -10,7 +10,8 @@ This is an interview coding task. Check setup information below.
 4. Signup on https://www.binance.com/ and get API_KEY and SECURE_KEY
 5. Copy `.env.example` as `.env` and provide proper variables.
 6. To run dev version run `npm run dev`
-7. To run tests runb `npm run test' or for watch mode `npm run test:watch`
+7. Visit http://localhost:3001 in browser.
+8. To run tests runb `npm run test' or for watch mode `npm run test:watch`
 
 ## What is missing and should be improved
 
