@@ -3,7 +3,7 @@ import { describe, test, beforeEach } from 'node:test';
 import { analyzeSymbolHistory } from './analyzeSymbolHistory.ts';
 import { type SymbolHistoryEntry } from './types.ts';
 
-describe('analyzeSymbolHistory', () => {
+describe('analyzeSymbolHistory', { concurrency: true }, () => {
   let symbolHistory: SymbolHistoryEntry[] = [];
 
   beforeEach(() => {
