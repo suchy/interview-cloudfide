@@ -13,12 +13,19 @@ This is an interview coding task. Check setup information below.
 7. Visit http://localhost:3001 in browser.
 8. To run tests runb `npm run test' or for watch mode `npm run test:watch`
 
+## Parameters
+
+Use search strings to pass `symbol` (required), `startTime` (optional) and `endTime`.
+
+Example: `http://localhost:3001/?symbol=BTCUSDT&starTime=2025-10-01&endTime=2025-10-10`
+
 ## What is missing and should be improved
 
 - error handling - right now when fetching data fails the error is logged and empty array is returned, there should be some inform,ation for end user and correct http code (now is 200)
 - caching/storing data - right now all data comes from api - there should be some caching layer or/and store data in local db to avoid calling api all the time. It will also help with showing old but true data when api fails
 - fetching data tests are naive and are calling api. This should be mockd but in interview stress I failed to mock 'binanse.ts' module. That should not happen.
 - rate limit - right now this app could be easly ddosed
+- Binance api limits - right now it return max 1000 items, which could not cover all time range.
 
 ## What I think went well
 
